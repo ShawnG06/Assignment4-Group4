@@ -1,0 +1,62 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Ruby and Bundler
+.bundle/
+**/vendor/bundle/
+*.gem
+
+# Rails secrets
+**/config/master.key
+**/config/credentials/*.key
+
+# Rails runtime files
+/src/log/*
+!/src/log/.keep
+
+/src/tmp/*
+!/src/tmp/.keep
+
+/src/storage/*
+!/src/storage/.keep
+
+# Generated assets
+/src/public/assets/
+/src/public/packs/
+/src/public/packs-test/
+/src/app/assets/builds/*
+!/src/app/assets/builds/.keep
+
+# Dependencies
+node_modules/
+
+# Testing
+coverage/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary database backups
+*.sql.tmp
+*.bak
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ruby version manager local overrides
+.ruby-gemset
+.rbenv-vars
+
+# Rails temporary secret
+/src/tmp/local_secret.txt
+
+# Debug history
+.byebug_history
+.irb_history
