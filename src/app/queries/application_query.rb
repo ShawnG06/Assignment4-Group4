@@ -10,7 +10,7 @@ class ApplicationQuery
     connection.exec_query(
       sql,
       self.class.name,
-      birds
+      binds
     ).to_a
 
   end
